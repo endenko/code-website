@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>đăng nhập / đăng ký</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/movie website/login-signup-form-master/src/main.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">đăng nhập</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Tên người dùng hoặc email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Mật khẩu">
+                <div class="form__input-error-message"></div>
+            </div>
+            <label>
+                <input type="checkbox" name="luotweb">Ghi nhớ đăng nhập ? 
+            </label>
+            <button class="form__button" type="submit">Tiếp tục</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Quên mật khẩu ? </a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Không có tài khoản ? Tạo tài khoản</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="/movie website/movie.html">Quay lại ?</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Tạo tài khoản</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Tên người dùng">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email của bạn">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Mật khẩu">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Xác nhận Mật khẩu">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="date" class="form__input" autofocus placeholder="Ngày sinh">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">tiếp tục</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Đã có tài khoản ? Quay lại</a>
+            </p>
+        </form>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
